@@ -8,7 +8,7 @@ interface IPageTitle {
 }
 
 export const PageTitle = ({ title }: IPageTitle) => {
-	const { screenSizeGroup, isMobile } = useContext(ScreenContext)
+	const { isMobile } = useContext(ScreenContext)
 
 	return (
 		<>

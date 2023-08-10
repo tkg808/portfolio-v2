@@ -19,7 +19,7 @@ export const ScreenProvider = ({ children }: { children: any }) => {
 	const [screenSizeGroup, setScreenSizeGroup] = useState<number>(getSizeGroup(window.innerWidth))
 	const [isMobile, setIsMobile] = useState<boolean>(getSizeGroup(window.innerWidth) <= 2)
 
-	const handleResize = (e: Event) => {
+	const handleResize = () => {
 		const newScreen = getSizeGroup(window.innerWidth)
 
 		setScreenSizeGroup(newScreen)
