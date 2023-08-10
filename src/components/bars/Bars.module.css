@@ -1,0 +1,73 @@
+.container {
+    --pad-r: 1.25rem;
+    --pad-b: 0.9375rem;
+
+    height: 100%;
+    padding-right: var(--pad-r);
+    padding-bottom: var(--pad-b);
+}
+
+.icon {
+    --icon-width: 4rem;
+    --icon-height: 3rem;
+
+    width: var(--icon-width);
+    height: var(--icon-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.bar {
+    --bar-height: 0.4rem;
+
+    width: 100%;
+    height: var(--bar-height);
+    background-color: var(--text);
+    border-radius: 50px;
+}
+
+/* ===== Laptop ===== */
+@media screen and (max-width: 1024px) {}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 768px) {}
+
+/* ===== Mobile L ===== */
+@media screen and (max-width: 480px) {
+    .container {
+        padding-right: calc(var(--pad-r) * 0.75);
+        padding-bottom: calc(var(--pad-b) * 0.75);
+    }
+
+    .icon {
+        width: calc(var(--icon-width) * 0.875);
+        height: calc(var(--icon-height) * 0.875);
+    }
+
+    .bar {
+        height: calc(var(--bar-height) * 0.875);
+    }
+}
+
+/* ===== Mobile S ===== */
+@media screen and (max-width: 375px) {
+    .container {
+        padding-right: calc(var(--pad-r) * 0.75);
+        padding-bottom: calc(var(--pad-b) * 0.75);
+    }
+
+    .icon {
+        width: calc(var(--icon-width) * 0.75);
+        height: calc(var(--icon-height) * 0.75);
+    }
+
+    .bar {
+        height: calc(var(--bar-height) * 0.75);
+    }
+}

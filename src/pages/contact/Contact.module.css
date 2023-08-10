@@ -1,0 +1,72 @@
+.container {
+    --font-size: 1rem;
+    --pad-y: 1.75rem;
+    --pad-x: 3.125rem;
+
+    width: 100%;
+    font-size: var(--font-size);
+    padding-top: calc(var(--pad-y) * 3.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: var(--pad-y) var(--pad-x);
+    display: flex;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75em;
+}
+
+.list_item {
+    font-size: 2.25em;
+}
+
+/* ===== Laptop ===== */
+@media screen and (max-width: 1024px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.9375);
+        padding-top: calc(var(--pad-y) * 3);
+    }
+}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.875);
+        padding-top: calc(var(--pad-y) * 2.5);
+        align-items: center;
+    }
+
+    .content {
+        padding: calc(var(--pad-y) * 1) calc(var(--pad-x) * 0.75);
+        text-align: center;
+    }
+}
+
+/* ===== Mobile L ===== */
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.75);
+        padding-top: calc(var(--pad-y) * 2);
+    }
+
+    .content {
+        padding: calc(var(--pad-y) * 0.75) calc(var(--pad-x) * 0.5);
+    }
+}
+
+/* ===== Mobile S ===== */
+@media screen and (max-width: 375px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.625);
+        padding-top: calc(var(--pad-y) * 1);
+    }
+
+    .content {
+        padding: calc(var(--pad-y) * 0.5) calc(var(--pad-x) * 0.25);
+    }
+}

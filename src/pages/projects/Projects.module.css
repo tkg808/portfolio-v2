@@ -1,0 +1,131 @@
+.container {
+    --font-size: 1rem;
+    --pad-y: 1.75rem;
+    --pad-x: 3.125rem;
+
+    width: 100%;
+    font-size: var(--font-size);
+    padding-top: calc(var(--pad-y) * 3.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: var(--pad-y) var(--pad-x);
+    display: flex;
+    gap: 3.125em;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75em;
+}
+
+.list_item {
+    font-size: 2.25em;
+}
+
+.list_item:hover {
+    cursor: pointer;
+    color: var(--accents);
+}
+
+.card {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    opacity: 0;
+}
+
+.card>h3 {
+    font-size: 3em;
+}
+
+.description {
+    font-size: 1.75em;
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+    font-size: 1.75em;
+    gap: 2.5em;
+}
+
+.link:hover {
+    scale: 1.2;
+}
+
+/* ===== Laptop ===== */
+@media screen and (max-width: 1024px) {
+    .container {
+        height: 100%;
+        font-size: calc(var(--font-size) * 0.9375);
+        padding-top: calc(var(--pad-y) * 3);
+    }
+}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.875);
+        padding-top: calc(var(--pad-y) * 2.5);
+        align-items: center;
+    }
+
+    .content {
+        padding: calc(var(--pad-y) * 1) calc(var(--pad-x) * 0.75);
+        text-align: center;
+        flex-direction: column;
+        gap: 6.25em;
+    }
+
+    .list {
+        gap: 1em;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* ===== Mobile L ===== */
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.75);
+        padding-top: calc(var(--pad-y) * 2);
+    }
+
+    .content {
+        padding: calc(var(--pad-y) * 0.75) calc(var(--pad-x) * 0.5);
+        gap: 3.125em;
+    }
+
+    .list {
+        gap: 0.5em;
+    }
+
+    .card {
+        gap: 0.5em;
+    }
+
+    .links {
+        gap: 1.5em;
+    }
+}
+
+/* ===== Mobile S ===== */
+@media screen and (max-width: 375px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.625);
+        padding-top: calc(var(--pad-y) * 1);
+    }
+
+    .content {
+        padding: calc(var(--pad-y) * 0.5) calc(var(--pad-x) * 0.25);
+        gap: 1.5625em;
+    }
+}

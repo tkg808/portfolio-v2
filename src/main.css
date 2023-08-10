@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Belleza', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --background: #242a32;
+  --primary: #007CBE;
+  --accents: #FBAF00;
+  --text: #FFFFFF;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--background);
+}
+
+#root,
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+}
+
+a {
+  font-weight: 400;
+  color: white;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--accents);
+}
+
+/* ===== Tablet L ===== */
+@media screen and (max-width: 1024px) {
+
+  #root,
+  html {
+    /* font-size: 14px; */
+  }
+}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 768px) {
+
+  #root,
+  html {
+    /* font-size: 12px; */
+  }
+}
+
+/* ===== Mobile L ===== */
+@media screen and (max-width: 480px) {
+
+  #root,
+  html {
+    /* font-size: 10px; */
+  }
+}
+
+/* ===== Mobile S ===== */
+@media screen and (max-width: 375px) {
+
+  #root,
+  html {
+    /* font-size: 8px; */
+  }
+}

@@ -1,0 +1,55 @@
+.container {
+    --font-size: 1rem;
+
+    padding: 0 3.125em;
+    position: relative;
+    font-size: var(--font-size);
+}
+
+.title {
+    width: fit-content;
+    padding-bottom: 0.1em;
+    padding-right: 0.5em;
+    position: relative;
+    font-size: 3.5em;
+}
+
+.slider {
+    height: calc(var(--font-size) * 0.1875);
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary);
+}
+
+/* ===== Laptop ===== */
+@media screen and (max-width: 1024px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.9375);
+    }
+}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.875);
+    }
+
+    .title {
+        padding-left: 0.5em;
+    }
+}
+
+/* ===== Mobile L ===== */
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.8125);
+    }
+}
+
+/* ===== Mobile S ===== */
+@media screen and (max-width: 375px) {
+    .container {
+        font-size: calc(var(--font-size) * 0.625);
+    }
+}
