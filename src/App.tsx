@@ -6,7 +6,6 @@ import { Bio } from './pages/bio/Bio'
 import { Projects } from './pages/projects/Projects'
 import { Contact } from './pages/contact/Contact'
 import Style from './App.module.css'
-import { motion } from 'framer-motion'
 import { ScreenContext } from './contexts/ScreenContext'
 
 export const App = () => {
@@ -31,11 +30,7 @@ export const App = () => {
 					setShowDropdown={setShowDropdown}
 				/>
 				<div className={Style.bg_wrapper}>
-					<motion.div
-						className={Style.background}
-						animate={{ rotate: 360 }}
-						transition={{ ease: 'linear', duration: 90, repeat: Infinity }}
-					/>
+					<div className={Style.background} />
 				</div>
 				<main className={Style.main}>
 					<Routes>
