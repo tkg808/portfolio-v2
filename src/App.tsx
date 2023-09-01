@@ -6,7 +6,6 @@ import { Bio } from './pages/bio/Bio'
 import { Projects } from './pages/projects/Projects'
 import { Contact } from './pages/contact/Contact'
 import Style from './App.module.css'
-import { motion } from 'framer-motion'
 import { ScreenContext } from './contexts/ScreenContext'
 
 export const App = () => {
