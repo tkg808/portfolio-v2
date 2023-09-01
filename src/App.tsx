@@ -31,11 +31,7 @@ export const App = () => {
 					setShowDropdown={setShowDropdown}
 				/>
 				<div className={Style.bg_wrapper}>
-					<motion.div
-						className={Style.background}
-						animate={{ rotate: 360 }}
-						transition={{ ease: 'linear', duration: 90, repeat: Infinity }}
-					/>
+					<div className={Style.background} />
 				</div>
 				<main className={Style.main}>
 					<Routes>
